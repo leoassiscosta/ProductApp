@@ -1,0 +1,53 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Visual Studio
+*.vs/
+*.ncb
+*.log
+*.tlog
+*.pdb
+*.opendb
+
+# Rider
+.idea/
+*.sln.iml
+
+# Dependency caches
+packages/
+*.nupkg
+*.snupkg
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Dotnet tools
+*.db
+.nuget/
+*.vspscc
+*.vssscc
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Configuration files
+appsettings.Development.json
+secrets.json

@@ -1,0 +1,27 @@
+﻿@page "/product"
+@inject Services.ProductService Service;
+
+<h3>Produtos</h3>
+
+@if (products == null)
+{
+    <p>Carregando...</p>
+}
+else
+{
+    <ul>
+        @foreach (var p in products)
+        {
+            <li>@p.Name - @p.Price.ToString("C")</li>
+        }
+    </ul>
+}
+
+@code {
+    List<ProductApp.Models.Product>? products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Service.GetAllAsync();
+    }
+}
